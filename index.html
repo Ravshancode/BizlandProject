@@ -1,0 +1,595 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BizLand</title>
+  <link href="img/apple-touch-icon.png" rel="icon">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="icon/css/all.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body id="body">
+  <header id="home">
+   <ul class="from"> 
+     <li>
+      <a href = "mailto: ravshanbek9918@gmai.com"><i class="	fa fa-envelope"></i> <span> ravshanbek9918@gmai.com</span></a></li>
+     <li><a href="tel: +998993189918"><i class="fa fa-mobile-phone"></i> <span> +998993189918</span></a></li>
+   </ul>
+   <nav class="navIcon">
+<ul class="iconUl">
+       <li ><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+     <li ><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+     <li > <a href="https://www.youtube.com/c/ozodlikradiosi"><i class="fab fa-youtube" ></i></a></li>
+     <li > <a href="https://t.me/Ravshanbek_98"><i class="fab fa-telegram-plane" aria-hidden="true"></i></a></li>
+     <li ><a href="https://www.instagram.com/ravshanbek_98__/"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+</ul>
+
+  
+   </nav>
+  </header>
+  
+  <nav id="nav"  class="navbar navbar-expand-lg " >
+    <div>
+      <h1><a href="#">BizLand</a></h1>
+    </div>
+
+    <div class="search">
+      <button class="btn1">
+        <input type="text" class="input" placeholder="Seaech...">
+        <i class="fas fa-search"></i>
+      </button>
+      </div>
+      
+    <div class="navbar-item">
+
+
+      <div class="navbar-media">  
+        <div class="btn-active">
+          <button class="btn" id="grid"  onclick="grid()"> <i class="fa fa-bars" id="list-icon"></i></button>
+          <button class="btn displayNon" id="list"  onclick="list()"> <i  class="	fa fa-remove " id="list-icon"></i></button>
+        </div>
+     
+      </div>
+      <ul class="navbar-ites">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#aboud">Aboud</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li>
+          <div class="custom-select" id="navSelect">
+            <!-- select -->
+          <select>
+            <option value="#services"><a href="#services">Services</a></option>
+            <option value="#tram"><a href="#team">Team</a></option>
+            <option value="#princing" id="#princing"><a href="#princing">Princing</a></option>
+        
+          </select>
+        </div>
+      </li>
+        <li><a href="#contact">Contact</a></li>
+
+      </ul>
+
+      <ul class="navbar-block navitm displayNon" id="gridlist">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#aboud">Aboud</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li>
+          <div class="custom-select" id="navSelect">
+          <select>
+            <option value="#services"><a href="#services">Services</a></option>
+            <option value="#tram"><a href="#team">Team</a></option>
+            <option value="#princing" id="#princing"><a href="#princing">Princing</a></option>
+        
+          </select>
+        </div>
+      </li>
+        <li><a href="#contact">Contact</a></li>
+
+      </ul>
+      <div class="BtnMoon">
+             
+        <i id="projectBlac" class="	fa fa-moon-o p-2" onclick="projectBlack()"></i>
+        <i id="projectSun" class="fas fa-sun p-2" onclick="projectSun()" style="display: none;"></i>
+
+      
+      </div>
+    </div>
+   
+  </nav>
+  <div class="containerAll" onclick="clicDiv()">
+  <div class="containerWon">
+    <div class="rowWon">
+     <strong>Welcome to </strong>
+      <strong> BizLand</strong>
+      <p>We are team of talented designers making websites with Bootstrap</p>
+      <div>
+
+        <a href="#" class="btn btn-outline-primary" >GET STARTED</a>
+      <strong><a href="#" class="watchVideo"><i class="	fa fa-play-circle"></i>Watch Video</a></strong>
+    </div>
+      
+      
+    </div>
+   
+  </div>
+
+  <div class="container">
+    <div class="row" id="rowBefore">
+        <div class="col-lg-3 col-md-6 col-sm-12 " data-aos="fade-up" style="transition: 0.4s;">
+            <div class="card card-before ">
+                      <p><i class="fa fa-link"></i></p>
+                      <h5>Lorem impsum </h5>
+                      <p>
+                          Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
+                      </p>
+                  </div>
+              </div>
+        <div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-up"style="transition: 0.7s;">
+                <div class="card card-before">
+                          <p><i class="fa fa-cubes"></i></p>
+                          <h5>
+                            Sed ut perspiciatis </h5>
+                          <p>
+                              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                          </p>
+                      </div>
+                  </div>
+        <div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-up" style="transition: 1s;">
+                    <div class="card card-before">
+              
+                              <p><i class="fa fa-university"></i></p>
+                              <h5>Magni Dolores </h5>
+                              <p>
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                              </p>
+                          </div>
+                      </div>
+         <div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-up" style="transition: 1.3s;">
+                        <div class="card card-before">
+                      
+                                  <p><i class="fa fa-globe"></i></p>
+                                  <h5> Nemo Enim </h5>
+                                  <p>
+                                   
+                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                    
+                                  </p>
+                              </div>
+                          </div>
+    </div>
+</div>
+<div class="containerTow pt-5" id="aboud">
+  <div class="contoner4-text">
+    <div data-aos="fade-up"
+    data-aos-duration="2000"> 
+      <a href="#" class="btn btn-outline-primary mt-4" id="cardBtnId">ABOUT</a><br><br>
+    <p class="ml-4  display-5"> <span id="textGold">Find Out More</span> <spam class="text-primary ml-5 display-4"> About Us</spam></p>
+    <p id="calkGrey"><strong>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</strong></p>
+  </div>
+   
+    <div class="container">
+      <div class="row">
+    <div class="col-lg-6 col-md-12 col-sm-12 sar2 fade-in-left" data-aos="fade-right" data-aos-duration="700">
+      
+        <img src="img/about.jpg" alt="" class="img-rounded">
+    </div>
+      <div class="col-lg-6 col-md-12 col-sm-12 sar2 "id="text-biznes" data-aos="fade-up"
+      data-aos-duration="1000">
+       <h2>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h2>
+        <i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </i>
+        <br><hr>
+       <div class="flex-items">
+ <p id="textGold"><i class="	fa fa-archive fa-2x"></i></p>
+ <p>
+          <strong>Ullamco laboris nisi ut aliquip consequat</strong>
+  Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
+  
+       </div>
+       <div class="flex-items">
+         <p id="textGold"><i class="fa fa-photo fa-2x"></i></p>
+           <p>
+    <strong>Magnam soluta odio exercitationem reprehenderi</strong>
+    Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p>
+       </div>
+
+<p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>     
+</div>
+      
+      </div>
+       
+  </div>
+</div>
+</div>
+
+<div class="contoner4" id="services">
+<div class="contoner4-text">
+  <div data-aos="fade-up"
+  data-aos-duration="2000">
+      <a href="#" class="btn btn-outline-primary mt-5" id="cardBtnId">SERVICES</a><br><br>
+  <p class="ml-4  display-5"> <span id="textGold">Check our</span>
+    <span class="text-primary ml-5 display-4"> Services</span></p>
+    <strong id="calkGrey">Ut possimus qui ut temporibus culpa velit eveniet modi omnis est <br> adipisci expedita at voluptas atque vitae autem</strong>
+  </div>
+
+
+  </div>
+  <div class="container">
+    <div class="row">
+
+      
+        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up"
+     data-aos-duration="600">
+          <div class="card card-list" id="cardShadol" >
+          <p><i class="fa fa-graduation-cap	fa-2x"></i></p>
+          <h5><a href="#">Lorem Ipsum </a> </h5>
+<p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
+          </p>
+        </div>
+      </div>
+      
+        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up"
+     data-aos-duration="800">
+          <div class="card card-list" id="cardShadol" >
+          <p><i class="fa fa-file-text	fa-2x"></i></p>
+          <h5><a href="#">Sed ut perspiciatis </a> </h5>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+        </div>
+      </div>
+
+      
+        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up"
+     data-aos-duration="1000">
+          <div class="card card-list" id="cardShadol" >
+          <p><i class="		fa fa-rocket fa-2x"></i></p>
+          <h5><a href="#">Magni Dolores </a> </h5>
+          <p>
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+          </p>
+        </div>
+      </div>
+      
+        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up"
+     data-aos-duration="600">
+          <div class="card card-list" id="cardShadol" >
+          <p><i class="fa fa-globe fa-2x"></i></p>
+         <h5><a href="#">Nemo Enim
+         </a> </h5>
+         <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+            </p>
+        </div>
+      </div>
+
+      
+        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up"
+     data-aos-duration="800">
+          <div class="card card-list" id="cardShadol" >
+     <p><i class="fa fa-desktop fa-2x"></i></p>
+        <h5><a href="#"> Dele cardo</a> </h5>
+        <p>Quis consequatur saepe eligendi voluptatem consequatur dolor conseq
+             </p>
+        </div>
+      </div>
+      
+        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up"
+     data-aos-duration="1000">
+          <div class="card card-list" id="cardShadol" >
+          <p><i class="	fa fa-magnet fa-2x"></i></p>
+          <h5><a href="#"> Divera don</a> </h5>
+          <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur
+          </p>
+        </div>
+      </div>
+
+                    
+    </div>
+</div>
+</div>
+
+    <div class="container">
+       <div class="contoner4-text" id="portfolio">
+        <div data-aos="fade-up"
+    data-aos-duration="2000">
+      <a href="#" class="btn btn-outline-primary mt-5" id="cardBtnId">PORTFOLIO</a><br><br>
+    <p class="ml-4  display-5"><span id="textGold">Check our  </span>
+      <span class="text-primary ml-5 display-4"> Portfolio</span></p>
+      <p><strong id="calkGrey">Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</strong></p>
+      <strong class="img1">
+        <ul>
+        <li><a href="#" class="btn btn-outline-info px-3 " id="cardBtnId">ALL</a></li>
+        <li><a href="#" class="btn btn-outline-primary px-3" id="cardBtnId">APP</a></li>
+        <li><a href="#" class="btn btn-outline-primary px-3" id="cardBtnId">CARD</a></li>
+        <li><a href="#" class="btn btn-outline-primary px-3" id="cardBtnId">WEB</a></li>
+      </ul>
+    </strong>
+  </div>
+    
+      <div class="container">
+        <div class="row img2">
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 ">
+              <div class="overImg"><img src="img/portfolio/portfolio-1.jpg" alt="">
+              </div>
+            </div>
+             
+             <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 ">
+               <div class="overImg"><img src="img/portfolio/portfolio-2.jpg" alt="">
+              </div>
+             </div>
+             <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 ">
+               <div class="overImg">
+                 <img src="img/portfolio/portfolio-3.jpg" alt="">
+                </div>
+           </div>
+             <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 ">
+               <div class="overImg">  
+                 <img src="img/portfolio/portfolio-4.jpg" alt="">
+              </div>
+           </div>
+             <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 ">
+               <div class="overImg"> 
+                 <img src="img/portfolio/portfolio-5.jpg" alt="">
+              </div>
+            </div>
+             <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 ">
+               <div class="overImg">
+                  <img src="img/portfolio/portfolio-6.jpg" alt="">
+               </div>
+        </div>
+             <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 ">
+               <div class="overImg">
+                 <img src="img/portfolio/portfolio-7.jpg" alt="">
+               </div>
+             </div>
+             <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 ">
+               <div class="overImg">
+                 <img src="img/portfolio/portfolio-8.jpg" alt="">
+               </div>
+             </div>
+             <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 ">
+               <div class="overImg">
+                 <img src="img/portfolio/portfolio-9.jpg" alt="">
+               </div>
+             </div>
+</div>
+</div>
+</div>
+</div> 
+     <div class="cantaner" id="team">
+            <div class="contoner4-text">
+              <div class="text">
+                <div data-aos="fade-up"
+                data-aos-duration="2000">
+                   <a href="#" class="btn btn-outline-primary mt-5" id="cardBtnId">TEAM</a>
+                <p class="ml-4  display-5"> <span id="textGold">Our Hardworking </span>
+                  <span class="text-primary ml-5 display-4"> Team</span></p>
+                  <p><strong id="calkGrey">Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</strong></p>
+                </div>
+               
+               <div class="container">
+                 <div class="row ">
+
+                  <div  class="col-xl-3 col-lg-6 col-md-6 col-sm-12 " id="cardTranslet" data-aos="fade-up" style="transition: 0.4s;">
+                    <div class="card  mt-5" id="cardZoom"> 
+                      <img  class="card-img-top" src="img/team/team-1.jpg" alt="">
+                      <div class="card-body ">
+                         <h4>Walter White</h4>
+                 <p>Chief Executive Officer</p>
+                      </div>
+                    </div>
+               </div>
+
+               <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 " id="cardTranslet" data-aos="fade-up"style="transition: 0.7s;">
+                 <div class="card  mt-5" id="cardZoom">
+                     <img class="card-img-top" src="img/team/team-2.jpg" alt="">
+                     <div class="card-body ">
+                           <h4>Sarah Jhonson</h4>
+                <p>Product Manager</p>
+                     </div>
+                 </div>
+              </div>
+
+              <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 " id="cardTranslet" data-aos="fade-up" style="transition: 1s;">
+                <div class="card  mt-5" id="cardZoom">
+                <img class="card-img-top" src="img/team/team-3.jpg" alt="">
+                <div class="card-body ">
+                   <h4>William Anderson</h4>
+                <p>CTO</p> 
+                </div>
+                </div>
+            </div>
+  <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 " id="cardTranslet" data-aos="fade-up" style="transition: 1.3s;">
+    <div class="card  mt-5" id="cardZoom">
+        <img class="card-img-top" src="img/team/team-4.jpg" alt="">
+        <div class="card-body ">
+            <h4>Amanda Jepson</h4>
+  <p>Accoutant</p>
+        </div>
+    </div>
+
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+  <div class="container" id="princing">
+  <div class="contoner4-text">
+   <div class="yozuv2">
+     <div data-aos="fade-up"
+     data-aos-duration="2000">
+         <a href="#" class="btn btn-outline-primary mt-5" id="cardBtnId">PRICING</a><br><br>
+  <p class="ml-4  display-5"><span id="textGold">Check our </span>
+  <span class="text-primary"> Pricing</span></p>
+  <p><strong id="calkGrey">Ut possimus qui ut temporibus culpa velit eveniet modi omnis est <br> adipisci expedita at voluptas atque vitae autem.</strong></p>
+</div>
+      
+<div class="container">
+  <div class="row ">
+
+   <div  class="col-xl-3 col-lg-6 col-md-6 col-sm-12 " id="cardTranslet" data-aos="fade-up" style="transition: 0.4s;">
+     <div class="card  mt-5 card-moniy" id="cardZoom"> 
+       <strong class="bg-secondary text-white card-size">Free</strong>
+       <div class="card-body ">
+          <p><strong class="text-primary text-size"><sup><i class="	fa fa-dollar"></i></sup>0</strong> <span class="text-muted"> / month</span></p>
+          <p>Aida dere</p>
+          <p>Nec feugiat nisl</p>
+          <p>Nulla at volutpat dola</p>
+          <del class="text-muted">Pharetra massa <br></del>
+          <del class="text-muted">Massa ultricies mi</del>
+       </div>
+       <button class="btn btn-primary">Buy Now</button>
+     </div>
+</div>
+
+<div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 " id="cardTranslet" data-aos="fade-up"style="transition: 0.7s;">
+  <div class="card  mt-5 card-moniy" id="cardZoom">
+    <strong class="bg-primary text-white card-size">Business</strong>
+      <div class="card-body ">
+        <p><strong class="text-primary text-size"><sup><i class="	fa fa-dollar"></i></sup>19</strong> <span class="text-muted">/ month</span></p>
+        <p>Aida dere</p>
+        <p> Nec feugiat nisl</p>
+       <p>Nulla at volutpat dola</p>
+       <p>Pharetra massa</p>
+       <del class="text-muted">Massa ultricies mi</del>
+      </div>
+      <button class="btn btn-primary">Buy Now</button>
+  </div>
+</div>
+
+<div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 " id="cardTranslet" data-aos="fade-up" style="transition: 1s;">
+ <div class="card  mt-5 card-moniy" id="cardZoom">
+   <strong class="bg-secondary text-white card-size">Developer</strong>
+ <div class="card-body ">
+        <p><strong class="text-primary text-size"><sup><i class="	fa fa-dollar"></i></sup>29</strong> <span class="text-muted">/ month</span></p>
+        <p>Aida dere</p> 
+       <p>Nec feugiat nisl</p>
+      <p>Nulla at volutpat dola</p>
+      <p>Pharetra massa</p>
+      <p>Massa ultricies mi</p>
+ 
+ </div>
+ <button class="btn btn-primary">Buy Now</button>
+    </div>
+    </div>
+   <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 " id="cardTranslet" data-aos="fade-up" style="transition: 1.3s;">
+      <div class="card  mt-5 card-moniy" id="cardZoom">
+        <strong class="bg-secondary text-white card-size">Ultimate <strong class="degStiker">Advanced</strong></strong>
+          <div class="card-body ">
+            <p><strong class="text-primary text-size"><sup><i class="	fa fa-dollar"></i></sup>49</strong> <span class="text-muted">/ month</span></p>
+            <p>    Aida dere</p>
+            <p>Nec feugiat nisl</p>
+            <p>Nulla at volutpat dola</p>
+            <p>Pharetra massa</p>
+            <p> Massa ultricies mi</p>
+           
+        </div>
+        <button class="btn btn-primary">Buy Now</button>
+        </div>
+
+      </div>
+    </div>
+  </div>  
+
+  </div>
+</div>    
+  </div>
+  
+    <div class="container" id="contact"
+    data-aos="fade-up"
+  data-aos-duration="2000">
+    <div class="contoner4-text">
+    <div class="yozuv2">
+    <a href="#" class="btn btn-outline-primary mt-5" id="cardBtnId">CONTACT</a><br><br> 
+    <p class="text-primary display-5">Contact Us </p></p>
+    <p><strong id="calkGrey">Ut possimus qui ut temporibus culpa velit eveniet modi omnis est <br> adipisci expedita at voluptas atque vitae autem.</strong></p>
+   <div class="container">
+  <div class="row card-flex">
+    
+ <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 ">
+                <div class="card lats" id="bg-black">
+         <h3>Our Address</h3>
+         <p><i class="fa fa-map-marker fa-2x "></i>
+          <span>A108 Adam Street, New York, NY 535022</span></p>
+         </div>
+         </div>
+        
+         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 ">
+          <div class="card lats" id="bg-black">
+   <h3>Email Us </h3>
+   <p><i class="fa fa-envelope fa-2x "></i>
+    <span> ravshanbek9918@gmai.com</span></p>
+   </div>
+  </div>
+
+   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 ">
+    <div class="card lats" id="bg-black">
+      <h3>Call Us</h3>
+      <p><i class="fa fa-phone fa-2x "> </i><span> +998(99)-318-99-18</span></p>
+    </div>
+  </div>
+
+    </div>
+
+        <div class="cantaner">
+          <div class="row mt-4 mb-5">
+            
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <iframe src="https://www.kun.uz" frameborder="0" width="100% " height="380px"></iframe> 
+ </div>
+            
+              <div class="col-lg-6 col-md-12 col-sm-12">
+<div class="colsit" id="bg-black">
+          <form action="#" method="get">
+          
+      <div class="name">
+         <input type="text" name="Familya" placeholder="Last name..." id="bg-black">
+       <input type="text" name="name" placeholder="First name..." id="bg-black">
+      </div>
+       <input type="email" class="sab" name="Sabjact" placeholder="Email..." id="bg-black">
+       <textarea name="shaxs haqida malumot" cols="115" rows="10" placeholder="Meesage..." id="bg-black"></textarea><br>
+       <div class="btn btn-outline-primary m-3" id="cardBtnId">Send Message</div>
+      </form>
+    </div>
+  </div>
+  </div>
+    </div>
+  </div>
+  </div>
+    </div>
+  </div>
+
+  <footer class="footerTop">
+    <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-md-6">
+            <h4>Join Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action method="post">
+              <input type="email" name="email" id="email" placeholder="email">
+              <input type="submit" value="Subscribe" class="btn btn-outline-primary mt-4" id="cardBtnId">
+            </form>
+          </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script src="./js/main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+  </body>
+ 
+</html>
