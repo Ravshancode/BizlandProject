@@ -683,7 +683,9 @@ strong li {
 
 .lats p i {
   padding: 0 10px;
-  transform: rotate(160deg);
+}
+.fa-phone{
+  transform: rotate(160deg) ;
 }
 
 .colsit {
