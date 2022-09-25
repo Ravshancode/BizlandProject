@@ -683,6 +683,7 @@ strong li {
 
 .lats p i {
   padding: 0 10px;
+  transform: rotate(160deg);
 }
 
 .colsit {
@@ -734,6 +735,18 @@ textarea:hover {
 .colsit > textarea:focus {
   border: 1px solid var(--blue-color);
   outline: none;
+}
+
+
+.footerBottomLink{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 80%;
+}
+.footerBottomLink>button{
+  font-size: 40px;
+  width: 100%;
 }
 
 /* JS style BLACK and White */
@@ -881,6 +894,9 @@ textarea:hover {
   .btn-active {
     display: block;
   }
+   .footerBottomLink button{
+    font-size: 1.3rem;
+  }
 }
 
 @media (min-width: 600px) and (max-width: 820px) {
@@ -918,5 +934,8 @@ textarea:hover {
 
   .btn-active {
     display: block;
+  }
+    .footerBottomLink button{
+    font-size: 1.3rem;
   }
 }
